@@ -14,7 +14,7 @@ This is an Angular project that allows users to search for information on the St
 
 ## Installation
 - Clone the repository to your local machine using `git clone`.
-- Navigate to the project directory and run `npm install` to install all dependencies.
+- Navigate to the project directory and run `npm install` or `npm install --force` to install all dependencies.
 
 ## Usage
 - Run `ng serve` to start the development server.
@@ -32,3 +32,10 @@ Note: This project was created for learning purposes only and is not affiliated 
 ## Testing
 - Run `ng test` to execute the unit tests using Karma and Jasmine.
 - Test files are located in the `src/app` directory with the extension *.spec.ts.
+
+## Project Requirements
+- @angular/cli: ~15.2.2
+- node: v16.15.0
+- postcss: ^8.4.21
+- tailwindcss: ^3.2.7
+
