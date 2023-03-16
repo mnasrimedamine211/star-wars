@@ -13,7 +13,7 @@ This is an Angular project that allows users to search for information on the St
 - Set up unit tests using Jasmine.
 
 ## Installation
-- Clone the repository to your local machine using `git clone`.
+- Clone the repository to your local machine using `git clone` then `cd star-wars`.
 - Navigate to the project directory and run `npm install` or `npm install --force` to install all dependencies.
 
 ## Usage
