@@ -1,0 +1,8 @@
+.vehicle-card {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+
+}

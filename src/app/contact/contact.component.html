@@ -1,0 +1,23 @@
+<div class="fixed inset-0 z-50 flex items-center justify-center">
+    <div class="fixed inset-0 bg-gray-900 opacity-75"></div>
+    <div class="relative z-50 w-full max-w-md px-6 py-4 bg-white rounded-lg shadow-lg">
+        <h2 class="text-lg font-semibold mb-4">Contact Us</h2>
+        <form (submit)="submitForm()">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-semibold mb-2">Your Email</label>
+                <input type="email" placeholder="Your email" name="senderEmail" class="w-full px-3 py-2 border rounded-md border-gray-400
+         focus:outline-none focus:border-blue-500" [(ngModel)]="senderEmail" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 font-semibold mb-2">Description</label>
+                <textarea placeholder="Your message" name="description"
+                    class="w-full px-3 py-2 border rounded-md border-gray-400 focus:outline-none focus:border-blue-500"
+                    rows="5" [(ngModel)]="description" required></textarea>
+            </div>
+            <button type="submit" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">Send
+                Message</button>
+        </form>
+        <button (click)="closeModal()"
+            class="absolute top-0 right-0 mt-4 mr-4 text-gray-600 hover:text-gray-800">&times;</button>
+    </div>
+</div>

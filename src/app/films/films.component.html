@@ -1,0 +1,28 @@
+<div class="px-2 sm:px-4 py-2.5">
+    <h1 class="text-lg font-bold  text-red-400 mb-4">List of Films</h1>
+    <div class="flex flex-col w-full">
+        <div class="flex flex-wrap w-full">
+            <div *ngFor="let film of films"
+                class="flex-shrink-0  sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2 h-custom">
+                <div class="border border-gray-600 shadow-md rounded-md film-card">
+                    <div class="p-4">
+                        <h2 class="text-lg font-bold text-yellow-400 p-4">{{ film.title }}</h2>
+                        <p class="text-slate-200 mb-2 pl-4">Released: {{ film.releaseDate }}</p>
+                        <p class="text-slate-200 mb-2 pl-4">Producers: {{ film.producers }}</p>
+                        <p class="text-slate-200 mb-2 pl-4">Director: {{ film.director }}</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button (click)="goToCharacters(film.id)"
+                            class="bg-black text-yellow-400 hover:text-yellow-300 py-2 px-4 rounded-full transition-colors transform hover:-translate-y-1 hover:shadow-lg">
+                            Characters
+                        </button>
+                        <button (click)="goToVehicles(film.id)"
+                            class="bg-black text-yellow-400 hover:text-yellow-300 py-2 px-4 rounded-full transition-colors transform hover:-translate-y-1 hover:shadow-lg">
+                            Vehicles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
