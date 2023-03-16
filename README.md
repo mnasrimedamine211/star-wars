@@ -14,7 +14,7 @@ This is an Angular project that allows users to search for information on the St
 
 ## Installation
 - Clone the repository to your local machine using `git clone`.
-- Navigate to the project directory `cd star-wars` and run `npm install` or `npm i --legacy-peer-deps`
+- Navigate to the project directory  and run `npm install` or `npm i --legacy-peer-deps`
   or `npm install--force` to install all dependencies.
 
 ## Usage
