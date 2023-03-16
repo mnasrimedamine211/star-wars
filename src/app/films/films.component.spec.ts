@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
 
 import { FilmsComponent } from './films.component';
 
@@ -8,9 +10,16 @@ describe('FilmsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FilmsComponent ]
+      declarations: [FilmsComponent],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: ActivatedRoute
+        }
+      ],
+      imports: [HttpClientModule]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(FilmsComponent);
     component = fixture.componentInstance;
